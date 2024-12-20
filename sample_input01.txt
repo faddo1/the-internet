@@ -1,0 +1,11 @@
+create-server facebook.com 192.1.1.1
+display-servers
+create-server google.com 168.3.32.5
+create-server twitter.com 123.56.44.188
+display-servers
+set-server facebook.com
+ping 168.3.32.5
+create-connection facebook.com google.com 32
+create-connection facebook.com twitter.com 77
+ping 168.3.32.5
+tracert 123.56.44.188

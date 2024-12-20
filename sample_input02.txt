@@ -1,0 +1,24 @@
+create-server twitter.com 104.244.42.193
+create-server facebook.com 157.240.241.35
+create-server amazon.com 172.5.12.128
+create-server netflix.com 158.69.7.238
+create-server wikipedia.org 208.80.154.244
+create-server umbc.edu 143.204.151.121
+create-server twitch.tv 151.101.210.167
+create-server discord.gg 162.159.134.234
+create-connection twitter.com facebook.com 34
+create-connection amazon.com netflix.com 22
+create-connection facebook.com amazon.com 14
+create-connection twitter.com netflix.com 31
+set-server netflix.com
+traceroute facebook.com
+traceroute amazon.com
+create-connection umbc.edu twitch.tv 33
+create-connection wikipedia.org umbc.edu 5
+create-connection wikipedia.org twitter.com 12
+display-servers
+ip-config
+ping netflix.com
+set-server umbc.edu
+tracert amazon.com
+tracert 172.5.12.128
